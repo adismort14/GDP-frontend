@@ -9,7 +9,7 @@ const Auth = () => {
     const code = urlParams.get('code');
 
     if (code) {
-      fetch('http://localhost:5000/auth/github/access_token', {
+      fetch('https://gdp-backend.backend.koyeb:5000/auth/github/access_token', {
         method: 'POST',
         body: JSON.stringify({ code }),
         headers: {

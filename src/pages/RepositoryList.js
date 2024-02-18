@@ -15,7 +15,7 @@ const RepositoryList = () => {
     // const accessToken = queryParams.get('access_token');
 
     if (accessToken) {
-      fetch(`http://localhost:5000/user/repos?access_token=${accessToken}`, {
+      fetch(`https://gdp-backend.backend.koyeb:5000/user/repos?access_token=${accessToken}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'

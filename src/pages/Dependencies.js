@@ -14,7 +14,7 @@ const Dependencies = () => {
     const repoName = selectedRepoData.name;
 
     if (accessToken) {
-      fetch(`http://localhost:5000/repo/dependencies?ownerName=${ownerName}&repoName=${repoName}&accessToken=${accessToken}`, {
+      fetch(`https://gdp-backend.backend.koyeb:5000/repo/dependencies?ownerName=${ownerName}&repoName=${repoName}&accessToken=${accessToken}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json'
